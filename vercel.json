@@ -5,6 +5,28 @@
   "framework": null,
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/licoes_biblicas_1_trimestre_2026",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/licoes_biblicas_2_trimestre_2026",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/licoes-biblicas-1-trimestre-2026",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/licoes-biblicas-2-trimestre-2026",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",
