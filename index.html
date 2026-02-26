@@ -1,0 +1,1211 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png"
+        href="assets/logo-cpad-preta-tamanho-a3-cmyk-fundo-transparente.png">
+    <title>Escola dominical | CPAD</title>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KFN4TS3D');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFN4TS3D" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+        <nav id="navbar">
+            <div class="nav-logos">
+                <img src="assets/logo-cpad-preta-tamanho-a3-cmyk-fundo-transparente.png" alt="CPAD"
+                    class="nav-logo">
+                <img src="assets/licoes-biblicas-com-vinheta_preta.png" alt="Lições Bíblicas" class="nav-logo">
+            </div>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Apresentação</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Materiais</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#summarios">Sumários</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#beneficios">Benefícios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Depoimentos</a>
+                </li>
+            </ul>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Apresentação</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Materiais</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#summarios">Sumários</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#beneficios">Benefícios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Depoimentos</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <button class="whatsapp-btn phone_button"><i class="fab fa-whatsapp"></i></button>
+
+
+    <main id="content">
+        <div id="store_modal" class="modal-overlay">
+            <div class="modal">
+                <h2>Selecione a loja</h2>
+                <select id="store_select">
+                    <option value="">-- Escolha uma loja --</option>
+                    <option value="553134314000">CPAD BELO HORIZONTE (MG)</option>
+                    <option value="556121074761">CPAD BRASÍLIA (DF)</option>
+                    <option value="5541987138566">CPAD CURITIBA (PR)</option>
+                    <option value="552133692727">CPAD JARDIM GUADALUPE (RJ)</option>
+                    <option value="559221266950">CPAD MANAUS (AM)</option>
+                    <option value="559821088401">CPAD MARANHÃO (MA)</option>
+                    <option value="5521993416369">CPAD MEGASTORE RIO</option>
+                    <option value="5584987956613">CPAD NATAL (RN)</option>
+                    <option value="552126204318">CPAD NITERÓI (RJ)</option>
+                    <option value="5521998838884">CPAD NOVA IGUAÇU (RJ)</option>
+                    <option value="558121284750">CPAD MEGASTORE (PE)</option>
+                    <option value="557121045300">CPAD SALVADOR (BA)</option>
+                    <option value="551121982700">CPAD SÃO PAULO (SP)</option>
+                    <option value="5521983851372">CPAD VICENTE DECARVALHO (RJ)</option>
+                    <option value="5527992593338">CPAD VILA VELHA (ES)</option>
+                    <option value="556932292808">CPAD PORTO VELHO (RO)</option>
+                    <option value="558230259155">CPAD MACEIÓ (AL)</option>
+                    <option value="555132240664">CPAD PORTO ALEGRE (RS)</option>
+                </select>
+                <span id="select-error" class="error-message" style="display:none;">
+                    Por favor, selecione uma loja
+                </span>
+
+                <div class="modal-buttons">
+                    <button class="cancel-button" onclick="closeModal()">Cancelar</button>
+                    <button id="confirm-button" class="confirm-button" disabled>Confirmar</button>
+                </div>
+            </div>
+        </div>
+        <section id="home">
+            <div id="cta">
+                <h1 class="title">
+                    Novo! Currículo de Escola Dominical -
+                    <span>2º Trimestre de 2026</span>
+                </h1>
+
+                <p class="description">
+                    Lições bíblicas para todas as faixas etárias: conteúdo fiel, organizado e com apoio para
+                    professores.
+                </p>
+
+                <div id="cta_buttons">
+                    <button id="phone_button" class="phone_button">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Faça seu pedido
+                    </button>
+                </div>
+
+                <!-- <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div> -->
+            </div>
+
+            <div id="banner">
+                <img src="assets/capa-cpad-site.webp" alt="Currículo CPAD" class="banner-img">
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Materiais Disponíveis para o 2º trimestre</h2>
+
+            <h3 class="section-subtitle">Adultos</h3>
+            <div class="slide-container swiper">
+                <div class="slide-content slide-content-adulto">
+                    <div class="card-wrapper swiper-wrapper">
+                        <!-- Adultos - Homens dos quais o Mundo não Era Digno -->
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-homens-dos-quais-o-mundo-nao-era-digno1.webp"
+                                    alt="Homens dos quais o Mundo não Era Digno" class="material-image">
+                            </div>
+                            <p class="card-name">Homens dos Quais o Mundo Não Era Digno</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-lba-2-tri-2026-professor.webp" alt="Adultos Professor"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Adultos — Professor</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-lbp-2-tri-2026-aluno.webp" alt="Adultos Aluno"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Adultos — Aluno</p>
+                        </div>
+
+                        <!-- Adultos - Versões Especiais -->
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-lba-2-tri-2026-professor-versao-ampliada.webp"
+                                    alt="Adultos Professor - Versão Ampliada" class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Adultos — Professor Versão Ampliada</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-lba-2-tri-2026-aluno-versao-ampliada.webp"
+                                    alt="Adultos Aluno - Versão Ampliada" class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Adultos — Aluno Versão Ampliada</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-lba-2-tri-2026-professor-versao-capa-dura.webp"
+                                    alt="Adultos Professor - Versão Capa Dura" class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Adultos — Professor Versão Capa Dura</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-lbp-2-tri-2026-aluno-ingles.webp"
+                                    alt="Adultos Aluno - Inglês" class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Adultos — Aluno (Inglês)</p>
+                        </div>
+
+                        <!-- Jovens - Entre a Verdade e o Engano -->
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-entre-a-verdade-e-o-engano.webp"
+                                    alt="Entre a Verdade e o Engano" class="material-image">
+                            </div>
+                            <p class="card-name">Entre a Verdade e o Engano</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-1-jovens-professor-2tri2026.webp" alt="Jovens Professor"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Jovens — Professor</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-jovens-aluno-2tri2026.webp" alt="Jovens Aluno"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Jovens — Aluno</p>
+                        </div>
+
+                        <!-- Adultos - Comunhão -->
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-comunhao.webp" alt="Comunhão" class="material-image">
+                            </div>
+                            <p class="card-name">Comunhão</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-button-next-adulto swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-button-prev-adulto swiper-navBtn"></div>
+                <div class="swiper-pagination swiper-pagination-adulto"></div>
+            </div>
+
+            <h3 class="section-subtitle">Adolescentes</h3>
+            <div class="slide-container swiper">
+                <div class="slide-content slide-content-adolescente">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-1-juvenis-prof6-2tri2026.webp" alt="Juvenis Professor"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Juvenis — Professor</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-juvenis-capa-aluno6-2tri2026.webp" alt="Juvenis Aluno"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Juvenis — Aluno</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-adolescente-professor-2-tri-2026.webp" alt="Adolescentes Professor"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Adolescentes — Professor</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-adolescentes-aluno-2-tri-2026.webp" alt="Adolescentes Aluno"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Adolescentes — Aluno</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-1-pre-adolescentes-professor-2-tri-2026.webp" alt="Pré-Adolescentes Professor"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Pré-Adolescentes — Professor</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-pre-adolescentes-aluno-2-tri-2026.webp" alt="Pré-Adolescentes Aluno"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Pré-Adolescentes — Aluno</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-button-next-adolescente swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-button-prev-adolescente swiper-navBtn"></div>
+                <div class="swiper-pagination swiper-pagination-adolescente"></div>
+            </div>
+
+            <h3 class="section-subtitle">Infantil</h3>
+            <div class="slide-container swiper">
+                <div class="slide-content slide-content-infantil">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-1-juniores-professor-2-tri-2026.webp" alt="Juniores Professor"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Juniores — Professor</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-juniores-aluno-2-tri-2026.webp" alt="Juniores Aluno"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Juniores — Aluno</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/visuais-juniores.webp" alt="Visual Juniores" class="material-image">
+                            </div>
+                            <p class="card-name">Visuais Juniores</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-1-primarios-professor-2-tri-2026.webp" alt="Primários Professor"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Primários — Professor</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-primarios-aluno-2-tri-2026.webp" alt="Primários Aluno"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Primários — Aluno</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/visual-primarios.webp" alt="Visual Primários" class="material-image">
+                            </div>
+                            <p class="card-name">Visuais Primários</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-1-jardim-professor-2-tri-2026.webp" alt="Jardim Professor"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Jardim — Professor</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-jardim-aluno-2-tri-2026.webp" alt="Jardim Aluno"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Jardim — Aluno</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/visual-jardim.webp" alt="Visual Jardim" class="material-image">
+                            </div>
+                            <p class="card-name">Visuais Jardim</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-1-maternal-professor-2-tri-2026.webp" alt="Maternal Professor"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Maternal — Professor</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-maternal-aluno-2-tri-2026.webp" alt="Maternal Aluno" class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Maternal — Aluno</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/visual-maternal.webp" alt="Visual Maternal" class="material-image">
+                            </div>
+                            <p class="card-name">Visuais Maternal</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-bercario-2-tri-2026.webp" alt="Berçário" class="material-image">
+                            </div>
+                            <p class="card-name">Lições Bíblicas Berçário</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/visual-bercario.webp" alt="Visual Berçário" class="material-image">
+                            </div>
+                            <p class="card-name">Visuais Berçário</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-button-next-infantil swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-button-prev-infantil swiper-navBtn"></div>
+                <div class="swiper-pagination swiper-pagination-infantil"></div>
+            </div>
+
+            <h3 class="section-subtitle">Novos Convertidos</h3>
+            <div class="slide-container swiper">
+                <div class="slide-content slide-content-novosconvertidos">
+                    <div class="card-wrapper swiper-wrapper">
+                        <!-- DISCIPULADO - Volume 1 -->
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/discipulado-professor-1.webp" alt="Discipulado 01 - Professor"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Discipulado 01 — Professor</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/discipulado-aluno-1.webp" alt="Discipulado 01 - Aluno"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Discipulado 01 — Aluno</p>
+                        </div>
+
+                        <!-- DISCIPULADO - Volume 2 -->
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/discipulado-professor-2.webp" alt="Discipulado 02 - Professor"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Discipulado 02 — Professor</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/discipulado-aluno-2.webp" alt="Discipulado 02 - Aluno"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Discipulado 02 — Aluno</p>
+                        </div>
+
+                        <!-- DISCIPULANDO - Volume 1 -->
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/discipulando-professor-1.webp" alt="Discipulando 01 - Professor"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Discipulando 01 — Professor</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/discipulando-aluno-1.webp" alt="Discipulando 01 - Aluno"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Discipulando 01 — Aluno</p>
+                        </div>
+
+                        <!-- DISCIPULANDO - Volume 2 -->
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/discipulando-professor-2.webp" alt="Discipulando 02 - Professor"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Discipulando 02 — Professor</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/discipulando-aluno-2.webp" alt="Discipulando 02 - Aluno"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Discipulando 02 — Aluno</p>
+                        </div>
+
+                        <!-- DISCIPULANDO - Volume 3 -->
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/discipulando-professor-3.webp" alt="Discipulando 03 - Professor"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Discipulando 03 — Professor</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/discipulando-aluno-3.webp" alt="Discipulando 03 - Aluno"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Discipulando 03 — Aluno</p>
+                        </div>
+
+                        <!-- DISCIPULANDO - Volume 4 -->
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/discipulando-professor-4.webp" alt="Discipulando 04 - Professor"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Discipulando 04 — Professor</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/discipulando-aluno-4.webp" alt="Discipulando 04 - Aluno"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Discipulando 04 — Aluno</p>
+                        </div>
+
+                        <!-- O CAMINHO PARA O CÉU -->
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/o-caminho-para-o-ceu-professor.webp"
+                                    alt="O Caminho para o Céu - Professor" class="material-image">
+                            </div>
+                            <p class="card-name">O Caminho para o Céu — Professor</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/o-caminho-para-o-ceu-aluno.webp"
+                                    alt="O Caminho para o Céu - Aluno" class="material-image">
+                            </div>
+                            <p class="card-name">O Caminho para o Céu — Aluno</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-button-next-novosconvertidos swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-button-prev-novosconvertidos swiper-navBtn"></div>
+                <div class="swiper-pagination swiper-pagination-novosconvertidos"></div>
+            </div>
+
+            <h3 class="section-subtitle">Periódicos</h3>
+            <div class="slide-container swiper">
+                <div class="slide-content slide-content-periodicos">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-ensinador-cristao.webp" alt="Ensinador Cristão"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Ensinador Cristão</p>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <img src="assets/capa-obreiro.webp" alt="Obreiros"
+                                    class="material-image">
+                            </div>
+                            <p class="card-name">Obreiros</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-button-next-periodicos swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-button-prev-periodicos swiper-navBtn"></div>
+                <div class="swiper-pagination swiper-pagination-periodicos"></div>
+            </div>
+        </section>
+
+        <section class="accordion" id="summarios">
+            <div class="accordion-item">
+                <div class="accordion-title" onclick="toggleAccordion('adultos')"><span>Ver Sumário - Faixa Etária:
+                        Adultos</span><i class="fa-solid fa-chevron-down accordion-icon"></i></div>
+                <div class="accordion-content" id="adultos">
+                    <div class="sumario-box">
+                        <h4 class="sumario-tema">Tema: <span>Homens dos quais o mundo não Era Digno — O Legado de
+                                Abraão, Isaque e Jacó</span></h4>
+                        <p class="sumario-info"><strong>2º Trimestre de 2026</strong><br>
+                            Comentarista: <em>Elinaldo Renovato</em></p>
+                        <ul class="sumario-lista">
+                            <li><strong>LIÇÃO 1:</strong> Abraão: Seu Chamado e Sua Jornada de Fé</li>
+                            <li><strong>LIÇÃO 2:</strong> A Fé de Abraão nas Promessas de Deus</li>
+                            <li><strong>LIÇÃO 3:</strong> A Impaciência na Espera do Cumprimento da Promessa</li>
+                            <li><strong>LIÇÃO 4:</strong> A Confirmação de Uma Promessa</li>
+                            <li><strong>LIÇÃO 5:</strong> O Juízo contra Sodoma e Gomorra</li>
+                            <li><strong>LIÇÃO 6:</strong> O Nascimento de Isaque</li>
+                            <li><strong>LIÇÃO 7:</strong> Uma Prova de Fé: A Entrega de Isaque</li>
+                            <li><strong>LIÇÃO 8:</strong> Isaque: Herdeiro da Promessa</li>
+                            <li><strong>LIÇÃO 9:</strong> Jacó e Esaú: Irmãos em Conflito</li>
+                            <li><strong>LIÇÃO 10:</strong> A Experiência Transformadora de Jacó</li>
+                            <li><strong>LIÇÃO 11:</strong> Jacó: De Enganador a Homem de Honra</li>
+                            <li><strong>LIÇÃO 12:</strong> A Reconciliação de Jacó com Esaú</li>
+                            <li><strong>LIÇÃO 13:</strong> O Legado de Fé de Abraão, Isaque e Jacó</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title" onclick="toggleAccordion('jovens')"><span>Ver Sumário - Faixa Etária:
+                        Jovens</span><i class="fa-solid fa-chevron-down accordion-icon"></i></div>
+                <div class="accordion-content" id="jovens">
+                    <div class="sumario-box">
+                        <h4 class="sumario-tema">Tema: <span>Entre a verdade e o Engano — Combatendo Ideologias e
+                                Ensinos que se Opõem à Palavra de Deus</span></h4>
+                        <p class="sumario-info"><strong>2º Trimestre de 2026</strong><br>
+                            Comentarista: <em>Eduardo Leandro Alves</em></p>
+                        <ul class="sumario-lista">
+                            <li><strong>LIÇÃO 1:</strong> O que é uma ideologia</li>
+                            <li><strong>LIÇÃO 2:</strong> A falácia do materialismo histórico</li>
+                            <li><strong>LIÇÃO 3:</strong> A falácia do relativismo ético-moral</li>
+                            <li><strong>LIÇÃO 4:</strong> A falácia da ideologia de gênero</li>
+                            <li><strong>LIÇÃO 5:</strong> A falácia da teologia progressista</li>
+                            <li><strong>LIÇÃO 6:</strong> A falácia do humanismo</li>
+                            <li><strong>LIÇÃO 7:</strong> A falácia da teoria darwiniana</li>
+                            <li><strong>LIÇÃO 8:</strong> A falácia do pragmatismo</li>
+                            <li><strong>LIÇÃO 9:</strong> A falácia do ateísmo</li>
+                            <li><strong>LIÇÃO 10:</strong> A falácia da teoria do deísmo</li>
+                            <li><strong>LIÇÃO 11:</strong> A falácia da teologia da prosperidade</li>
+                            <li><strong>LIÇÃO 12:</strong> A falácia do triunfalismo</li>
+                            <li><strong>LIÇÃO 13:</strong> O discernimento do cristão</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title" onclick="toggleAccordion('juvenis')"><span>Ver Sumário - Faixa Etária:
+                        Juvenis</span><i class="fa-solid fa-chevron-down accordion-icon"></i></div>
+                <div class="accordion-content" id="juvenis">
+                    <div class="sumario-box">
+                        <h4 class="sumario-tema">Tema: <span>O Que Cristo Fez Por Nós e o que Podemos Fazer pelo Reino
+                                de Deus</span></h4>
+                        <p class="sumario-info"><strong>2º Trimestre de 2026</strong><br>
+                            Comentarista: <em>Telma Bueno</em></p>
+                        <ul class="sumario-lista">
+                            <li><strong>Lição 1:</strong> JESUS SE FEZ CARNE POR AMOR A NÓS</li>
+                            <li><strong>Lição 2:</strong> JESUS SE SACRIFICOU POR AMOR A NÓS</li>
+                            <li><strong>Lição 3:</strong> JESUS VENCEU A MORTE</li>
+                            <li><strong>Lição 4:</strong> JESUS PODE NOS TRANSFORMAR</li>
+                            <li><strong>Lição 5:</strong> JESUS TEM PODER SOBRE OS DEMÔNIOS</li>
+                            <li><strong>Lição 6:</strong> JESUS TEM PODER SOBRE AS DOENÇAS</li>
+                            <li><strong>Lição 7:</strong> POSSO JEJUAR E ORAR</li>
+                            <li><strong>Lição 8:</strong> POSSO PERDOAR E AMAR</li>
+                            <li><strong>Lição 9:</strong> POSSO SER PURO DE CORAÇÃO</li>
+                            <li><strong>Lição 10:</strong> POSSO SER UMA TESTEMUNHA</li>
+                            <li><strong>Lição 11:</strong> POSSO FAZER A DIFERENÇA</li>
+                            <li><strong>Lição 12:</strong> POSSO VIVER PARA A GLÓRIA DE DEUS</li>
+                            <li><strong>Lição 13:</strong> POSSO CUMPRIR A VONTADE DE DEUS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title" onclick="toggleAccordion('adolescentes')"><span>Ver Sumário - Faixa Etária:
+                        Adolescentes</span><i class="fa-solid fa-chevron-down accordion-icon"></i></div>
+                <div class="accordion-content" id="adolescentes">
+                    <div class="sumario-box">
+                        <h4 class="sumario-tema">Tema: <span>As Parábolas de Jesus são Vivas</span></h4>
+                        <p class="sumario-info"><strong>2º Trimestre de 2026</strong><br>
+                            Comentarista: <em>Rafael Luz</em></p>
+                        <ul class="sumario-lista">
+                            <li><strong>Lição 1:</strong> Jesus, o Mestre que ensinava por parábolas</li>
+                            <li><strong>Lição 2:</strong> Uma história sobre a oração</li>
+                            <li><strong>Lição 3:</strong> O semeador e a sua semente</li>
+                            <li><strong>Lição 4:</strong> Uma história sobre graça e responsabilidade</li>
+                            <li><strong>Lição 5:</strong> O Reino de Deus e as sementes</li>
+                            <li><strong>Lição 6:</strong> A obediência verdadeira</li>
+                            <li><strong>Lição 7:</strong> Achados e perdidos no Reino</li>
+                            <li><strong>Lição 8:</strong> Você está preparado?</li>
+                            <li><strong>Lição 9:</strong> Uma parábola sobre Israel</li>
+                            <li><strong>Lição 10:</strong> O amor na prática</li>
+                            <li><strong>Lição 11:</strong> Você está firme?</li>
+                            <li><strong>Lição 12:</strong> Uma história sobre dinheiro</li>
+                            <li><strong>Lição 13:</strong> O amor do Pai por seus filhos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title" onclick="toggleAccordion('preadolescentes')"><span>Ver Sumário - Faixa
+                        Etária: Pré-Adolescentes</span><i class="fa-solid fa-chevron-down accordion-icon"></i></div>
+                <div class="accordion-content" id="preadolescentes">
+                    <div class="sumario-box">
+                        <h4 class="sumario-tema">Tema: <span>Conhecendo o Caráter de Deus</span></h4>
+                        <p class="sumario-info"><strong>2º Trimestre de 2026</strong><br>
+                            Comentarista: <em>Renato Paúra</em></p>
+                        <ul class="sumario-lista">
+                            <li><strong>Lição 1:</strong> Quem é Deus</li>
+                            <li><strong>Lição 2:</strong> Deus e a Criação</li>
+                            <li><strong>Lição 3:</strong> As Qualidades de Deus</li>
+                            <li><strong>Lição 4:</strong> Os Nomes de Deus</li>
+                            <li><strong>Lição 5:</strong> Deus Pai, Filho e Espírito Santo</li>
+                            <li><strong>Lição 6:</strong> Quem é Deus No Antigo Testamento?</li>
+                            <li><strong>Lição 7:</strong> Quem É Deus no Novo Testamento?</li>
+                            <li><strong>Lição 8:</strong> Deus e a Sua Igreja</li>
+                            <li><strong>Lição 9:</strong> Sou Filho de Deus?</li>
+                            <li><strong>Lição 10:</strong> Conhecendo Deus pela Fé</li>
+                            <li><strong>Lição 11:</strong> Vamos Falar com Deus</li>
+                            <li><strong>Lição 12:</strong> Sede Santos Porque Ele é Santo</li>
+                            <li><strong>Lição 13:</strong> Um Deus Amoroso</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title" onclick="toggleAccordion('juniores')"><span>Ver Sumário - Faixa Etária:
+                        Juniores</span><i class="fa-solid fa-chevron-down accordion-icon"></i></div>
+                <div class="accordion-content" id="juniores">
+                    <div class="sumario-box">
+                        <h4 class="sumario-tema">Tema: <span>Israel e a Terra Prometida</span></h4>
+                        <p class="sumario-info"><strong>2º Trimestre de 2026</strong><br>
+                            Comentarista: <em>Brunna Farias</em></p>
+                        <ul class="sumario-lista">
+                            <li><strong>Lição 1:</strong> O nascimento de Moisés</li>
+                            <li><strong>Lição 2:</strong> Deus chama um libertador</li>
+                            <li><strong>Lição 3:</strong> A aflição dos hebreus e a promessa de liberdade</li>
+                            <li><strong>Lição 4:</strong> Deus envia as pragas</li>
+                            <li><strong>Lição 5:</strong> A morte dos primogênitos</li>
+                            <li><strong>Lição 6:</strong> A primeira Páscoa</li>
+                            <li><strong>Lição 7:</strong> A travessia pelo Mar Vermelho</li>
+                            <li><strong>Lição 8:</strong> Deus manda o alimento</li>
+                            <li><strong>Lição 9:</strong> A família de Moisés</li>
+                            <li><strong>Lição 10:</strong> Os Dez Mandamentos</li>
+                            <li><strong>Lição 11:</strong> O Tabernáculo de Deus</li>
+                            <li><strong>Lição 12:</strong> As pedras da Lei e o bezerro de ouro</li>
+                            <li><strong>Lição 13:</strong> Moisés, a glória de Deus e a Terra Prometida</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title" onclick="toggleAccordion('primarios')"><span>Ver Sumário - Faixa Etária:
+                        Primários</span><i class="fa-solid fa-chevron-down accordion-icon"></i></div>
+                <div class="accordion-content" id="primarios">
+                    <div class="sumario-box">
+                        <h4 class="sumario-tema">Tema: <span>Os Ensinamentos de Deus</span></h4>
+                        <p class="sumario-info"><strong>2º Trimestre de 2026</strong><br>
+                            Comentarista: <em>Raquel Deolinda</em></p>
+                        <ul class="sumario-lista">
+                            <li><strong>Lição 1:</strong> Deus me ensina um livro especial</li>
+                            <li><strong>Lição 2:</strong> Deus me ensina os Dez Mandamentos</li>
+                            <li><strong>Lição 3:</strong> Deus me ensina a obedecer e a agradecer</li>
+                            <li><strong>Lição 4:</strong> Deus me ensina sobre os juízes</li>
+                            <li><strong>Lição 5:</strong> Deus me ensina a ter um coração sincero</li>
+                            <li><strong>Lição 6:</strong> Deus me ensina a ser sábio</li>
+                            <li><strong>Lição 7:</strong> Deus me ensina sobre os profetas</li>
+                            <li><strong>Lição 8:</strong> Deus me ensina sobre o seu filho Jesus</li>
+                            <li><strong>Lição 9:</strong> Jesus me ensina a verdadeira felicidade</li>
+                            <li><strong>Lição 10:</strong> Jesus me ensina sobre o céu e a salvação</li>
+                            <li><strong>Lição 11:</strong> Jesus me ensina a amar como ele amou</li>
+                            <li><strong>Lição 12:</strong> Jesus me ensina a evangelizar</li>
+                            <li><strong>Lição 13:</strong> Jesus me ensina a me preparar para a sua volta</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title" onclick="toggleAccordion('jardim')"><span>Ver Sumário - Faixa Etária:
+                        Jardim</span><i class="fa-solid fa-chevron-down accordion-icon"></i></div>
+                <div class="accordion-content" id="jardim">
+                    <div class="sumario-box">
+                        <h4 class="sumario-tema">Tema: <span>Aprendendo com Pessoas Abençoadas por Deus</span></h4>
+                        <p class="sumario-info"><strong>2º Trimestre de 2026</strong><br>
+                            Comentarista: <em>Olivia Baptistoti Tedesco</em></p>
+                        <ul class="sumario-lista">
+                            <li><strong>Lição 1:</strong> Papai do Céu ajuda a reconstruir os muros</li>
+                            <li><strong>Lição 2:</strong> Papai do Céu ajuda a falar com o rei</li>
+                            <li><strong>Lição 3:</strong> Papai do Céu ajuda a vencer o gigante</li>
+                            <li><strong>Lição 4:</strong> Papai do Céu ajuda a derrubar os portões</li>
+                            <li><strong>Lição 5:</strong> Uma missão especial dada pelo Papai do Céu</li>
+                            <li><strong>Lição 6:</strong> Papai do Céu abençoa com o perdão</li>
+                            <li><strong>Lição 7:</strong> Papai do Céu abençoa com sabedoria e riqueza</li>
+                            <li><strong>Lição 8:</strong> Papai do Céu ajuda a encontrar o livro perdido</li>
+                            <li><strong>Lição 9:</strong> Papai do Céu envia alimento</li>
+                            <li><strong>Lição 10:</strong> Contando sobre o Papai do Céu</li>
+                            <li><strong>Lição 11:</strong> Papai do Céu ajuda nos grandes desafios</li>
+                            <li><strong>Lição 12:</strong> Papai do Céu abençoa quem ajuda</li>
+                            <li><strong>Lição 13:</strong> Papai do Céu abençoa quem ora</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title" onclick="toggleAccordion('maternal')"><span>Ver Sumário - Faixa Etária:
+                        Maternal</span><i class="fa-solid fa-chevron-down accordion-icon"></i></div>
+                <div class="accordion-content" id="maternal">
+                    <div class="sumario-box">
+                        <h4 class="sumario-tema">Tema: <span>Vamos Conhecer a História do Povo de Deus</span></h4>
+                        <p class="sumario-info"><strong>2º Trimestre de 2026</strong><br>
+                            Comentarista: <em>Juliane Padilha</em></p>
+                        <ul class="sumario-lista">
+                            <li><strong>Lição 1:</strong> O Povo de Deus Precisa de Ajuda</li>
+                            <li><strong>Lição 2:</strong> O Bebê Escondido</li>
+                            <li><strong>Lição 3:</strong> Papai do Céu Chama Moisés</li>
+                            <li><strong>Lição 4:</strong> Moisés e Arão Dão um Recado para Faraó</li>
+                            <li><strong>Lição 5:</strong> O Rei Malvado Maltrata os Hebreus</li>
+                            <li><strong>Lição 6:</strong> A Primeira Páscoa</li>
+                            <li><strong>Lição 7:</strong> A Saída do Egito</li>
+                            <li><strong>Lição 8:</strong> O Mar se Abriu</li>
+                            <li><strong>Lição 9:</strong> Deus Envia Água e Comida</li>
+                            <li><strong>Lição 10:</strong> As Festas do Povo de Deus</li>
+                            <li><strong>Lição 11:</strong> Os Dez Mandamentos</li>
+                            <li><strong>Lição 12:</strong> A Construção da Casa de Deus</li>
+                            <li><strong>Lição 13:</strong> A Casa de Deus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-title" onclick="toggleAccordion('bercario')">
+                    <span>Ver Sumário - Faixa Etária: Berçário</span><i
+                        class="fa-solid fa-chevron-down accordion-icon"></i>
+                </div>
+                <div class="accordion-content" id="bercario">
+                    <div class="sumario-box">
+                        <h4 class="sumario-tema">Tema: <span>Vamos Conhecer a Palavra de Deus</span></h4>
+                        <p class="sumario-info"><strong>2º Trimestre de 2026</strong><br>
+                            Comentarista: <em>Caroline Tuler</em></p>
+                        <ul class="sumario-lista">
+                            <li><strong>Lição 1:</strong> O Grande Barco de Noé</li>
+                            <li><strong>Lição 2:</strong> Abraão, o Amigo do Papai do Céu</li>
+                            <li><strong>Lição 3:</strong> O Papai do Céu Ajuda Moisés</li>
+                            <li><strong>Lição 4:</strong> O Papai do Céu dá Força a Sansão</li>
+                            <li><strong>Lição 5:</strong> Rute, a Amiga de Noemi</li>
+                            <li><strong>Lição 6:</strong> Samuel Ouve a Voz do Papai do Céu</li>
+                            <li><strong>Lição 7:</strong> Davi Vence o Gigante</li>
+                            <li><strong>Lição 8:</strong> Elias Confia no Papai do Céu</li>
+                            <li><strong>Lição 9:</strong> Daniel e os Leões</li>
+                            <li><strong>Lição 10:</strong> Jonas e o Grande Peixe</li>
+                            <li><strong>Lição 11:</strong> Um Homem Pequeno</li>
+                            <li><strong>Lição 12:</strong> A Ovelha Perdida</li>
+                            <li><strong>Lição 13:</strong> Pedro Pesca Muitos Peixes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Materiais Complementares - Accordion Aninhado -->
+            <div class="accordion-item">
+                <div class="accordion-title complementar" onclick="toggleAccordion('discipulado-group')">
+                    <span>Ver Sumário - Discipulado</span>
+                    <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                </div>
+                <div class="accordion-content" id="discipulado-group">
+                    <div class="accordion-subgroup">
+
+                        <!-- Discipulado 01 -->
+                        <div class="accordion-item-nested">
+                            <div class="accordion-title-nested" onclick="toggleAccordion('discipulado01')">
+                                <span>📖 Discipulado 01 - Aluno e Professor</span>
+                                <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                            </div>
+                            <div class="accordion-content-nested" id="discipulado01">
+                                <div class="sumario-box">
+                                    <h4 class="sumario-tema">DISCIPULADO 01</h4>
+                                    <p class="sumario-info"><strong>Aluno e Professor</strong></p>
+                                    <ul class="sumario-lista">
+                                        <li><strong>Lição 1:</strong> Conhecendo a Bíblia</li>
+                                        <li><strong>Lição 2:</strong> Conhecendo Deus</li>
+                                        <li><strong>Lição 3:</strong> Conhecendo a Salvação</li>
+                                        <li><strong>Lição 4:</strong> Conhecendo a Igreja</li>
+                                        <li><strong>Lição 5:</strong> Conhecendo o Valor da Oração</li>
+                                        <li><strong>Lição 6:</strong> O Discípulo e a Fé</li>
+                                        <li><strong>Lição 7:</strong> O Discípulo e a Obediência</li>
+                                        <li><strong>Lição 8:</strong> O Discípulo e o Dízimo</li>
+                                        <li><strong>Lição 9:</strong> O Discípulo e o Espírito Santo</li>
+                                        <li><strong>Lição 10:</strong> O Discípulo Vivendo Cheio do Espírito</li>
+                                        <li><strong>Lição 11:</strong> O Discípulo e os Dons do Espírito Santo</li>
+                                        <li><strong>Lição 12:</strong> O Discípulo e o Fruto do Espírito Santo</li>
+                                        <li><strong>Lição 13:</strong> O Discípulo e o Evangelismo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Discipulado 02 -->
+                        <div class="accordion-item-nested">
+                            <div class="accordion-title-nested" onclick="toggleAccordion('discipulado02')">
+                                <span>📖 Discipulado 02 - Aluno e Professor</span>
+                                <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                            </div>
+                            <div class="accordion-content-nested" id="discipulado02">
+                                <div class="sumario-box">
+                                    <h4 class="sumario-tema">DISCIPULADO 02</h4>
+                                    <p class="sumario-info"><strong>Aluno e Professor</strong></p>
+                                    <ul class="sumario-lista">
+                                        <li><strong>Lição 01:</strong> O Discípulo e a Comunidade</li>
+                                        <li><strong>Lição 02:</strong> O Discípulo e o Lar Cristão</li>
+                                        <li><strong>Lição 03:</strong> O Discípulo e a Tentação</li>
+                                        <li><strong>Lição 04:</strong> O Discípulo e a Impureza</li>
+                                        <li><strong>Lição 05:</strong> O Discípulo e a Idolatria</li>
+                                        <li><strong>Lição 06:</strong> O Discípulo e a Temperança</li>
+                                        <li><strong>Lição 07:</strong> O Discípulo e o Perdão</li>
+                                        <li><strong>Lição 08:</strong> O Discípulo e a Mordomia Cristã</li>
+                                        <li><strong>Lição 09:</strong> O Discípulo e o Louvor</li>
+                                        <li><strong>Lição 10:</strong> O Discípulo e o Batismo nas Águas</li>
+                                        <li><strong>Lição 11:</strong> O Discípulo e a Santa Ceia</li>
+                                        <li><strong>Lição 12:</strong> O Discípulo e a Volta de Jesus</li>
+                                        <li><strong>Lição 13:</strong> O Discípulo e a Missão de Discipular</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-title complementar" onclick="toggleAccordion('discipulando-group')">
+                    <span>Ver Sumário - Discipulando</span>
+                    <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                </div>
+                <div class="accordion-content" id="discipulando-group">
+                    <div class="accordion-subgroup">
+
+                        <!-- Discipulando 01 -->
+                        <div class="accordion-item-nested">
+                            <div class="accordion-title-nested" onclick="toggleAccordion('discipulando01')">
+                                <span>📖 Discipulando 01 - Aluno e Professor</span>
+                                <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                            </div>
+                            <div class="accordion-content-nested" id="discipulando01">
+                                <div class="sumario-box">
+                                    <h4 class="sumario-tema">DISCIPULANDO 01</h4>
+                                    <p class="sumario-info"><strong>Aluno e Professor</strong></p>
+                                    <ul class="sumario-lista">
+                                        <li><strong>Lição 1:</strong> A Necessidade Humana: O Problema do Pecado</li>
+                                        <li><strong>Lição 2:</strong> O Fracasso de Israel em Representar o Reino de
+                                            Deus</li>
+                                        <li><strong>Lição 3:</strong> Quem é Jesus</li>
+                                        <li><strong>Lição 4:</strong> O Caráter de Jesus</li>
+                                        <li><strong>Lição 5:</strong> O Ministério de Jesus</li>
+                                        <li><strong>Lição 6:</strong> O Novo Mandamento</li>
+                                        <li><strong>Lição 7:</strong> A Mensagem de Jesus - O Reino de Deus</li>
+                                        <li><strong>Lição 8:</strong> O Reino de Deus já teve Início</li>
+                                        <li><strong>Lição 9:</strong> A Morte de Jesus</li>
+                                        <li><strong>Lição 10:</strong> A Ressurreição de Jesus</li>
+                                        <li><strong>Lição 11:</strong> A Salvação em Cristo</li>
+                                        <li><strong>Lição 12:</strong> Sendo um Discípulo de Jesus</li>
+                                        <li><strong>Lição 13:</strong> Igreja: Uma Expressão do Reino de Deus</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Discipulando 02 -->
+                        <div class="accordion-item-nested">
+                            <div class="accordion-title-nested" onclick="toggleAccordion('discipulando02')">
+                                <span>📖 Discipulando 02 - Aluno e Professor</span>
+                                <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                            </div>
+                            <div class="accordion-content-nested" id="discipulando02">
+                                <div class="sumario-box">
+                                    <h4 class="sumario-tema">DISCIPULANDO 02</h4>
+                                    <p class="sumario-info"><strong>Aluno e Professor</strong></p>
+                                    <ul class="sumario-lista">
+                                        <li><strong>Lição 1:</strong> O QUE É CRER</li>
+                                        <li><strong>Lição 2:</strong> CONHECENDO A BÍBLIA</li>
+                                        <li><strong>Lição 3:</strong> CRENDO PARA INTERPRETAR A BÍBLIA</li>
+                                        <li><strong>Lição 4:</strong> CRENDO NO DEUS TRINO</li>
+                                        <li><strong>Lição 5:</strong> CRENDO EM DEUS PAI</li>
+                                        <li><strong>Lição 6:</strong> CRENDO EM JESUS CRISTO</li>
+                                        <li><strong>Lição 7:</strong> CRENDO NA VINDA DE JESUS CRISTO</li>
+                                        <li><strong>Lição 8:</strong> CRENDO NO ESPÍRITO SANTO</li>
+                                        <li><strong>Lição 9:</strong> CRENDO NO BATISMO NO ESPÍRITO SANTO</li>
+                                        <li><strong>Lição 10:</strong> CRENDO NA SANTA IGREJA CRISTÃ, A COMUNHÃO DOS
+                                            SANTOS</li>
+                                        <li><strong>Lição 11:</strong> CRENDO NAS ORDENANÇAS DE CRISTO À IGREJA</li>
+                                        <li><strong>Lição 12:</strong> CRENDO NA GRAÇA DE DEUS</li>
+                                        <li><strong>Lição 13:</strong> CRENDO NA RESSURREIÇÃO DO CORPO E NA VIDA ETERNA
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Discipulando 03 -->
+                        <div class="accordion-item-nested">
+                            <div class="accordion-title-nested" onclick="toggleAccordion('discipulando03')">
+                                <span>📖 Discipulando 03 - Aluno e Professor</span>
+                                <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                            </div>
+                            <div class="accordion-content-nested" id="discipulando03">
+                                <div class="sumario-box">
+                                    <h4 class="sumario-tema">DISCIPULANDO 03</h4>
+                                    <p class="sumario-info"><strong>Aluno e Professor</strong></p>
+                                    <ul class="sumario-lista">
+                                        <li><strong>Lição 1:</strong> A BÍBLIA COMO REGRA DE FÉ E PRÁTICA</li>
+                                        <li><strong>Lição 2:</strong> A BELEZA DO PERDÃO</li>
+                                        <li><strong>Lição 3:</strong> VIVENDO SEM ACUSAÇÃO NEM CONDENAÇÃO</li>
+                                        <li><strong>Lição 4:</strong> SOU NOVA CRIATURA</li>
+                                        <li><strong>Lição 5:</strong> VENCENDO A TENTAÇÃO</li>
+                                        <li><strong>Lição 6:</strong> UMA VIDA CHEIA DO ESPÍRITO</li>
+                                        <li><strong>Lição 7:</strong> UMA VIDA FRUTÍFERA NO ESPÍRITO</li>
+                                        <li><strong>Lição 8:</strong> RELACIONANDO-SE COM A FAMÍLIA</li>
+                                        <li><strong>Lição 9:</strong> RELACIONANDO-SE COM OS ESTUDOS</li>
+                                        <li><strong>Lição 10:</strong> RELACIONANDO-SE COM A SOCIEDADE</li>
+                                        <li><strong>Lição 11:</strong> RELACIONANDO-SE COM A IGREJA LOCAL</li>
+                                        <li><strong>Lição 12:</strong> VIVENDO EM ORAÇÃO</li>
+                                        <li><strong>Lição 13:</strong> VIVENDO EM SANTIDADE</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Discipulando 04 -->
+                        <div class="accordion-item-nested">
+                            <div class="accordion-title-nested" onclick="toggleAccordion('discipulando04')">
+                                <span>📖 Discipulando 04 - Aluno e Professor</span>
+                                <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                            </div>
+                            <div class="accordion-content-nested" id="discipulando04">
+                                <div class="sumario-box">
+                                    <h4 class="sumario-tema">DISCIPULANDO 04</h4>
+                                    <p class="sumario-info"><strong>Aluno e Professor</strong></p>
+                                    <ul class="sumario-lista">
+                                        <li><strong>Lição 1:</strong> UM NOVO CARÁTER: A LEI DO REINO DE DEUS</li>
+                                        <li><strong>Lição 2:</strong> VOCÊ É SAL E LUZ</li>
+                                        <li><strong>Lição 3:</strong> CRISTO, O DISCÍPULO E A LEI</li>
+                                        <li><strong>Lição 4:</strong> DESVIANDO-SE DA CÓLERA E DO HOMICÍDIO</li>
+                                        <li><strong>Lição 5:</strong> A FIDELIDADE NO CASAMENTO</li>
+                                        <li><strong>Lição 6:</strong> A HONESTIDADE COM AS PALAVRAS</li>
+                                        <li><strong>Lição 7:</strong> SOBRE A VINGANÇA E O AMOR</li>
+                                        <li><strong>Lição 8:</strong> SEM HIPOCRISIA, MAS COM VERDADE</li>
+                                        <li><strong>Lição 9:</strong> ORAÇÃO NÃO MECÊNICA, MAS CONSCIENTE</li>
+                                        <li><strong>Lição 10:</strong> A AMBIÇÃO DO DISCÍPULO: NÃO À "SEGURANÇA" DOS
+                                            BENS MATERIAIS</li>
+                                        <li><strong>Lição 11:</strong> NÃO JULGUE O PRÓXIMO, PARA QUE NÃO SEJAS JULGADO
+                                        </li>
+                                        <li><strong>Lição 12:</strong> A BONDADE DE DEUS E OS FALSOS PROFETAS</li>
+                                        <li><strong>Lição 13:</strong> JESUS É A NOSSA IDENTIDADE</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-title complementar" onclick="toggleAccordion('caminho-ceu')">
+                    <span>Ver Sumário - Caminho para o Céu</span>
+                    <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                </div>
+                <div class="accordion-content" id="caminho-ceu">
+                    <div class="sumario-box">
+                        <h4 class="sumario-tema">CAMINHO PARA O CÉU</h4>
+                        <p class="sumario-info"><strong>Aluno e Professor</strong></p>
+                        <ul class="sumario-lista">
+                            <li><strong>Lição 1:</strong> DEUS SE IMPORTA COM VOCÊ</li>
+                            <li><strong>Lição 2:</strong> A ORIGEM DO HOMEM</li>
+                            <li><strong>Lição 3:</strong> A BÍBLIA É A PALAVRA DE DEUS</li>
+                            <li><strong>Lição 4:</strong> JESUS É SALVADOR</li>
+                            <li><strong>Lição 5:</strong> O CÉU É REAL</li>
+                            <li><strong>Lição 6:</strong> O INFERNO EXISTE</li>
+                            <li><strong>Lição 7:</strong> É POSSÍVEL VENCER OS SEUS PECADOS</li>
+                            <li><strong>Lição 8:</strong> É ERRADO ADORAR ÍDOLOS</li>
+                            <li><strong>Lição 9:</strong> É POSSÍVEL TORNAR-SE FILHO DE DEUS</li>
+                            <li><strong>Lição 10:</strong> O SIGNIFICADO DE ACEITAR A JESUS</li>
+                            <li><strong>Lição 11:</strong> O BATISMO</li>
+                            <li><strong>Lição 12:</strong> A SANTA CEIA</li>
+                            <li><strong>Lição 13:</strong> A MANEIRA CORRETA DE SE VIVER</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="" id="beneficios">
+            <h2 class="section-title">
+                Por que escolher o currículo da Escola Dominical CPAD?
+            </h2>
+
+            <div class="grid">
+                <div class="feedback">
+                    <img src="https://cpad.v4smc.com/wp-content/uploads/2025/05/front-view-man-holding-bible-scaled.jpg"
+                        class="feedback-avatar" alt="">
+                    <div class="feedback-content">
+                        <p class="text-bold">
+                            Conteúdo Bíblico Relevante
+                        </p>
+                        <p>
+                            Garanta lições atualizadas e com base sólida nas Escrituras.
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <img src="https://cpad.v4smc.com/wp-content/uploads/2025/05/WhatsApp-Image-2025-05-15-at-14.27.55.jpeg"
+                        class="feedback-avatar" alt="">
+                    <div class="feedback-content">
+                        <p class="text-bold">
+                            Recursos para Professores
+                        </p>
+                        <p>
+                            Guias e materiais que facilitam a preparação das aulas.
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <img src="https://cpad.v4smc.com/wp-content/uploads/2025/05/grandma-kid-spending-time-together-scaled.jpg"
+                        class="feedback-avatar" alt="">
+                    <div class="feedback-content">
+                        <p class="text-bold">
+                            Ensino para Todas as Idades
+                        </p>
+                        <p>
+                            Materiais pensados para engajar crianças, jovens e adultos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials" id="testimonials">
+            <img src="assets/cpad-imagem-3.webp" class="testimonial_chef" alt="">
+
+            <div class="testimonials_content">
+                <h2 class="section-title">
+                    Depoimentos
+                </h2>
+                <h3 class="section-subtitle">
+                    O que os clientes falam sobre nós
+                </h3>
+
+                <div class="feedbacks">
+                    <div class="feedback">
+                        <img src="https://cpad.v4smc.com/wp-content/uploads/2025/05/businessman-black-suit-holding-his-tasklist-makes-thumb-up-scaled.jpg"
+                            class="feedback-avatar" alt="">
+                        <div class="feedback-content">
+                            <p>
+                                Líder de ED, Recife/PE
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p style="font-style: italic;">"Utilizar esse material transformou nossa Escola Dominical!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="testimonials_content">
+                <h2 class="section-title">
+                    Conte com conteúdo fiel, linguagem acessível e apoio para professores.
+                </h2>
+                <h3 class="section-subtitle" style="margin-bottom: 20px;">
+                    Currículo Completo para o 2º Trimestre de 2026
+                </h3>
+                <button class="wpp-chamada phone_button"><i class="fab fa-whatsapp"></i> Fale Conosco pelo WhatsApp e Faça seu Pedido!</button>
+
+            </div>
+            <img src="assets/cpad-imagem-2.webp" class="testimonial_chef" alt="">
+        </section>
+    </main>
+
+    <footer>
+        <!-- Onda de transição -->
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" fill="var(--color-yellow-100)"/>
+            </svg>
+        </div>
+
+        <div class="footer-body">
+            <!-- Logos -->
+            <div class="footer-logos">
+                <img src="assets/logo-cpad-preta-tamanho-a3-cmyk-fundo-transparente.png" alt="CPAD" class="footer-logo">
+<img src="assets/licoes-biblicas-com-vinheta_preta.png" alt="Lições Bíblicas" class="footer-logo">
+            </div>
+
+            <!-- CTA central -->
+            <div class="footer-cta">
+                <p class="footer-cta-text">Adquira agora o material do 2º Trimestre de 2026</p>
+                <button class="wpp-chamada phone_button">
+                    <i class="fab fa-whatsapp"></i> Faça seu pedido
+                </button>
+            </div>
+
+            <!-- Links -->
+            <div class="footer-links">
+                <a href="https://www.escoladominical.com.br/politica-de-privacidade/" class="footer-link" target="_blank">
+                    Política de Privacidade
+                </a>
+                <a href="https://www.cpad.com.br" class="footer-link" target="_blank">
+                    cpad.com.br
+                </a>
+            </div>
+        </div>
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy; 2026 CPAD Comércio e Distribuidora Ltda — Todos os direitos reservados
+            </span>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js?v=1.2"></script>
+</body>
+
+</html>
