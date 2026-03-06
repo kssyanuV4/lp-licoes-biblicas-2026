@@ -330,7 +330,7 @@ document.addEventListener('keydown', function(e) {
 });
 
 // ── CPAD Lead Capture — Fluxo identico a LP Lojas (2 etapas) ─────────────────────
-var CPAD_API_URL = 'https://v0-saa-s-landing-page.vercel.app/api/leads';
+var CPAD_API_URL = 'https://cpad-lojas.vercel.app/api/leads';
 
 var CPAD_STORES = [
   { name: "CPAD BELO HORIZONTE (MG)", phone: "553134314000" },
